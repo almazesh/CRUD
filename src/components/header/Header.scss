@@ -1,0 +1,65 @@
+nav{
+  background-color: #4087fb;
+  height: 70px;
+  transition: .5s;
+  position: relative;
+  margin-bottom: 80px;
+
+  &.toggle{
+    height: 180px;
+    border-bottom: 3px solid white;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    .buttons{
+      position: absolute;
+      top: 60%;
+      display: none;
+      &.active{
+        display: flex;
+        top: inherit;
+        bottom: 10%;
+      }
+      button{
+        display: flex;
+        align-items: center;
+        svg{
+          font-size: 20px;
+        }
+      }
+      .btn_danger{
+        background: #db4437;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 13px;
+        border:0;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+      .btn_success{
+        background: #0f9d58;
+        color: white;
+        margin-right: 10px;
+        padding: 10px 20px;
+        font-size: 13px;
+        cursor: pointer;
+        border:0;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+    }
+
+    .burger{
+      color:white;
+      font-size: 25px;
+    }
+  }
+}

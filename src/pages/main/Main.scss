@@ -1,0 +1,92 @@
+.container{
+  .count{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 50px;
+    span{
+      color: #4087fb;
+    }
+  }
+  .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .card{
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background-color: white;
+      margin-bottom: 30px;
+      .date{
+        font-size: 10px;
+        margin: 0;
+        position: absolute;
+        top: 8%;
+      }
+      .completed{
+        position: absolute;
+        right: 5%;
+        top: 5%;
+      }
+      img{
+        width: 30px;
+      }
+      .card-header{
+        text-align: center;
+      }
+      .card-body{
+        padding:0 20px;
+
+      }
+      .card-input{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        height: 50%;
+        margin-left: 15px;
+        
+        input{
+          width: 80%;
+          padding: 10px 20px;
+          margin-bottom: 10px;
+        } 
+      }
+      .change_btn{
+        text-align: center;
+        button{
+          background: #4087fb;
+          border:0;
+          color:white;
+          cursor: pointer;
+          width: 33.3%;
+          padding: 5px 0;
+        }
+      }
+      .card-footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        button{
+          border:0;
+          color:white;
+          cursor: pointer;
+          width: 33.3%;
+          padding: 10px 0;
+          &:nth-child(1){
+            background: #db4437;
+          }
+          &:nth-child(2){
+            background: #0f9d58;
+          }
+          &:nth-child(3){
+            background: #4087fb;
+          }
+          svg{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
